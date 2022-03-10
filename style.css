@@ -1,0 +1,130 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;600;700;800;900&display=swap");
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family:'Poppins', sans-serif; 
+}
+
+/* body css/////////////////////////////////// */
+
+body{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.wrapper{
+    padding: 50px 25px 0;
+    max-width: 670px;
+    width: 100%;
+    margin: auto;
+}
+.wrapper::before{
+    content: ' ';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url("img/bg1.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    min-height: 100vh;
+    z-index: -1;
+}
+.wrapper .headline{
+    text-align: center;
+    padding-bottom: 50px;
+}
+.wrapper form{
+    max-width: 350px;
+    width: 100%;
+    margin: auto;
+}
+.wrapper .form-group{
+    margin-bottom: 15px;
+}
+.wrapper .form-group input{
+    display: block;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.1px;
+    height: 48px;
+    padding: 11px 15px;
+    border: 1px solid black;
+    color: black;
+    box-shadow: none;
+    width:100%
+    
+}
+.wrapper .form-group input:focus{
+    outline: none;
+
+}
+.wrapper .form-group input::placeholder{
+    color: black;
+    font-weight: 400;
+    font-size: 14px;
+}
+.wrapper .btn{
+   width: 100%; 
+   margin: 15px 0 30px;
+   font-size: 14px;
+   line-height: 22px;
+   font-weight: 700;
+   height: 48px;
+   text-transform: uppercase;
+   color: white;
+   background-color: blue;
+   border:none;
+   border-radius: 2px;
+   cursor: pointer;
+   text-align: center;
+}
+.wrapper .account-exist{
+    color: black;
+    border: 1px solid gray;
+    padding: 20px;
+    text-align: center;
+}
+.wrapper .account-exist a{
+    color: blue;
+}
+.wrapper .forget-password{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 0;
+}
+
+.wrapper .forget-password a{
+    color: blue;
+}
+.wrapper .forget-password .check-box{
+    font-size: 15px;
+    color:black;
+}
+.signup.inActive{
+    display: none;
+}
+.signin{
+    display: none;
+}
+.signin.Active{
+display: block;
+}
+
+
+
+
+
+
+
+
+
